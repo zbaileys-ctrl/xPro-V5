@@ -1,7 +1,7 @@
 # For more information please see: http://wiki.fluidnc.com/en/config/overview
 
 board: XPro V5
-name: xPro V5 Ondrej 
+name: xPro V5 Frankenforge
 stepping:
   engine: RMT
   idle_ms: 255
@@ -15,7 +15,7 @@ axes:
     steps_per_mm: 159.600
     max_rate_mm_per_min: 2500.000
     acceleration_mm_per_sec2: 100.000
-    max_travel_mm: 722.00
+    max_travel_mm: 495
     soft_limits: false
     homing:
       cycle: 2
@@ -40,7 +40,7 @@ axes:
         cs_pin: gpio.17
         spi_index: 1
         r_sense_ohms: 0.050
-        run_amps: 1.800
+        run_amps: 1
         hold_amps: 0.250
         microsteps: 8
         toff_disable: 0
@@ -60,7 +60,7 @@ axes:
     soft_limits: false
     homing:
       cycle: 2
-      positive_direction: false
+      positive_direction: true
       mpos_mm: 150.000
       feed_mm_per_min: 100.000
       seek_mm_per_min: 2000.000
@@ -81,7 +81,7 @@ axes:
         cs_pin: NO_PIN
         spi_index: 2
         r_sense_ohms: 0.050
-        run_amps: 1.800
+        run_amps: 1
         hold_amps: 0.250
         microsteps: 8
         toff_disable: 0
@@ -106,7 +106,7 @@ axes:
         cs_pin: NO_PIN
         spi_index: 3
         r_sense_ohms: 0.050
-        run_amps: 1.800
+        run_amps: 1
         hold_amps: 0.250
         microsteps: 8
         toff_disable: 0
@@ -147,7 +147,7 @@ axes:
         cs_pin: NO_PIN
         spi_index: 4
         r_sense_ohms: 0.050
-        run_amps: 1.800
+        run_amps: 1
         hold_amps: 0.250
         microsteps: 8
         toff_disable: 0
@@ -234,3 +234,4 @@ coolant:
   # tool_num: 0
   # speed_map: 0=0% 0=25% 6000=25% 24000=100%
   # off_on_alarm: false
+
